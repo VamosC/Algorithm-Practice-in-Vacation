@@ -12,11 +12,12 @@
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
 int** levelOrder(struct TreeNode* root, int** columnSizes, int* returnSize) {
-    int** Order = (int**)calloc(780, sizeof(int*));
+    int** Order = (int**)calloc(770, sizeof(int*));
     int i;
-    for(i = 0; i < 780; i++)
-    	Order[i] = (int*)malloc(sizeof(int)*780);
-    *columnSizes = (int*)calloc(780, sizeof(int));
+    for(i = 0; i < 770; i++){
+    	Order[i] = (int*)malloc(sizeof(int)*130);
+    }
+    *columnSizes = (int*)calloc(770, sizeof(int));
     *returnSize = 1;
     int deep;
     struct TreeNode* Queue[1100];
