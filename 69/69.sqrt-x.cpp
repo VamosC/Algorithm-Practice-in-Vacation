@@ -18,11 +18,11 @@ public:
         // x = xi - (xi^2 - n)/(2xi) = xi/2 + n/(2xi) = (xi + n/xi) / 2
         double res = 1.0;
         double last = 0.0;
-        while(last - res > 0.1 || last - res < 0)
+        while (last - res > 0.1 || last - res < 0)
         {
             last = res;
-            res = (res + x/res) / 2;
-        } 
+            res = (res + x / res) / 2;
+        }
         return static_cast<int>(res);
     }
 };
