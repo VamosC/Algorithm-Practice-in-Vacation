@@ -13,6 +13,6 @@ public:
         vector<string> res;
         if (n == 0)
             return res;
-        }
+    }
 };
 // @lc code=end
