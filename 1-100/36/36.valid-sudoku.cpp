@@ -5,6 +5,11 @@
  */
 
 // @lc code=start
+auto static _ = []() {
+    cin.tie(0);
+    ios::sync_with_stdio(false);
+    return 0;
+}();
 class Solution
 {
 public:
